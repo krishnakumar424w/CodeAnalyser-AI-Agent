@@ -1,0 +1,6 @@
+{
+  "name": "Groq Code Analysis Agent",
+  "description": "Production-ready Groq-powered code analysis agent analyzing approach, time/space complexity, and difficulty classification for C++, Python, and Java.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

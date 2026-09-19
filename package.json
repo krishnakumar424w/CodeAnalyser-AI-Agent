@@ -1,0 +1,13 @@
+{
+  "name": "groq-code-analysis-agent",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Production-ready backend Code Analysis Agent powered by Groq and llama-3.3-70b-versatile",
+  "scripts": {
+    "dev": "python3 -m app.server --port 3000 --host 0.0.0.0",
+    "build": "python3 -m pytest tests/",
+    "start": "python3 -m app.server --port 3000 --host 0.0.0.0",
+    "test": "pytest",
+    "lint": "python3 -m unittest discover -s tests"
+  }
+}
