@@ -2,12 +2,34 @@
   "name": "groq-code-analysis-agent",
   "private": true,
   "version": "1.0.0",
-  "description": "Production-ready backend Code Analysis Agent powered by Groq and llama-3.3-70b-versatile",
+  "type": "module",
+  "description": "Production-ready Groq-powered code analysis agent analyzing approach, time/space complexity, and difficulty classification for C++, Python, and Java.",
   "scripts": {
-    "dev": "python3 -m app.server --port 3000 --host 0.0.0.0",
-    "build": "python3 -m pytest tests/",
-    "start": "python3 -m app.server --port 3000 --host 0.0.0.0",
-    "test": "pytest",
-    "lint": "python3 -m unittest discover -s tests"
+    "dev": "tsx server.ts",
+    "build": "vite build",
+    "start": "NODE_ENV=production tsx server.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "lucide-react": "^1.47.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
   }
 }
